@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded',function(){
     toastTimer=setTimeout(function(){ toast.classList.remove('show'); },2200);
   }
   function copyIp(){
-    var text='play.wolfcraft.net';
+    var text='play.wolfcraft.biz.id';
     if(navigator.clipboard){
       navigator.clipboard.writeText(text).then(function(){ showToast('IP disalin: '+text); });
     } else {
