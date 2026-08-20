@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WolfCraft — Minecraft Survival Network</title>
+<meta name="description" content="WolfCraft — Survival Vanilla, Economy, dan Lifesteal. Bergabunglah dengan ribuan pemain di jaringan Minecraft terpercaya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="wolfGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4d9fff"/>
+      <stop offset="100%" stop-color="#1a3f8a"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="bg-fx">
+  <div class="bg-grid"></div>
+  <div class="bg-glow g1"></div>
+  <div class="bg-glow g2"></div>
+  <div class="bg-glow g3"></div>
+  <div id="shards"></div>
+</div>
+
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#home" class="brand">
+      <svg class="brand-mark wolf-icon" viewBox="0 0 48 48" fill="none">
+        <path d="M24 3 L40 11 L44 26 L38 41 L30 45 L28 36 L24 40 L20 36 L18 45 L10 41 L4 26 L8 11 Z" stroke="#3fd0ff" stroke-width="1" stroke-opacity=".5"/>
+        <path d="M24 6 L14 13 L11 24 L16 22 L14 32 L21 27 L24 31 L27 27 L34 32 L32 22 L37 24 L34 13 Z"/>
+        <circle class="eye" cx="19.5" cy="20" r="1.6"/>
+        <circle class="eye" cx="28.5" cy="20" r="1.6"/>
+      </svg>
+      <span class="brand-text">WOLF<span>CRAFT</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#servers">Servers</a>
+      <a href="#rules">Rules</a>
+      <a href="#discord">Discord</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="btn btn-ghost" id="copyNavIp">play.wolfcraft.biz.id</button>
+      <a href="https://discord.gg/VfwrwPWXPZ" class="btn btn-primary">Play Now</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#servers">Servers</a>
+    <a href="#rules">Rules</a>
+    <a href="#discord">Discord</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <svg class="hero-forest" viewBox="0 0 1440 260" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="treeGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#0b1a33"/>
+          <stop offset="100%" stop-color="#05070c"/>
+        </linearGradient>
+      </defs>
+      <g fill="url(#treeGrad)" opacity="0.9">
+        <polygon points="40,260 90,120 140,260"/>
+        <polygon points="120,260 180,60 240,260"/>
+        <polygon points="220,260 270,150 320,260"/>
+        <polygon points="300,260 380,40 460,260"/>
+        <polygon points="420,260 470,140 520,260"/>
+        <polygon points="500,260 580,80 660,260"/>
+        <polygon points="620,260 670,160 720,260"/>
+        <polygon points="700,260 780,50 860,260"/>
+        <polygon points="820,260 870,130 920,260"/>
+        <polygon points="900,260 980,70 1060,260"/>
+        <polygon points="1000,260 1050,150 1100,260"/>
+        <polygon points="1080,260 1160,55 1240,260"/>
+        <polygon points="1200,260 1250,140 1300,260"/>
+        <polygon points="1280,260 1360,65 1440,260"/>
+      </g>
+    </svg>
+    <div class="wrap hero-inner">
+       <div class="status-pill">
+      </div> 
+      <h1>
+        WELCOME<br>
+        <span class="line2">TO SEVER</span>
+        <span class="accent">WOLFCRAFT</span>
+      </h1>
+      <p class="hero-desc">WolfCraft adalah jaringan Minecraft survival tempat pemain bertahan hidup, membangun ekonomi, dan bertarung tanpa ampun — di dunia yang selalu aktif dan berkembang bersama komunitasnya.</p>
+      <div class="hero-actions">
+        <a href="#servers" class="btn btn-primary btn-lg">Play Now</a>
+        <div class="ip-box notch-corners">
+          <span class="ip-label">SERVER IP</span>
+          <span class="ip-val">play.wolfcraft.biz.id</span>
+          <button class="ip-copy" id="copyHeroIp">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="1"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            COPY
+          </button>
+        </div>
+      </div>
+      <div class="hero-stats">
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVERS -->
+  <section id="servers">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">Game modes</div>
+        <div class="section-head">
+          <div>
+            <h2 class="h-title">Ada 3 <em>Game Mode</em></h2>
+            
+        </div>
+      </div>
+
+      <div class="servers-grid">
+        <div class="s-card reveal">
+          <div class="s-top">
+            <div class="s-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            
+          </div>
+          <h3>Survival Vanilla</h3>
+          <p>Minecraft murni tanpa gangguan — hanya proteksi lahan dan anti-grief ringan. Bertahan hidup dengan cara yang sesungguhnya.</p>
+          <div class="s-tags">
+            <span class="s-tag">Claimland</span>
+            <span class="s-tag">CoreProtect</span>
+          </div>
+          <div class="s-foot">
+           
+          </div>
+        </div>
+
+        <div class="s-card reveal">
+          <div class="s-top">
+            <div class="s-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/></svg>
+            </div>
+          </div>
+          <h3>Survival Economy</h3>
+          <p>Bangun kekayaanmu, kuasai pasar, dan jadilah pemain terkaya di server!</p>
+          <div class="s-tags">
+            <span class="s-tag">Jobs</span>
+            <span class="s-tag">Player Shops</span>
+          </div>
+          <div class="s-foot">
+            
+          </div>
+        </div>
+
+        <div class="s-card reveal">
+          <div class="s-top">
+            <div class="s-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.6-9.4-9C1 8.6 2.6 5 6.4 5c2 0 3.4 1.2 4.1 2.3C11.2 6.2 12.6 5 14.6 5 18.4 5 20 8.6 18.4 12 16 16.4 12 21 12 21Z"/></svg>
+            </div>
+            
+          </div>
+          <h3>Lifesteal / Anarchy</h3>
+          <p>Tanpa aturan, tanpa ampun. Curi heart lawan, bertahan dari siapa saja, dan buktikan siapa yang benar-benar berkuasa di WolfCraft.</p>
+          <div class="s-tags">
+            <span class="s-tag">Heart Steal</span>
+            <span class="s-tag">Full PvP</span>
+          </div>
+          <div class="s-foot">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINIGAMES -->
+  <section id="minigames">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">Beyond survival</div>
+        <h2 class="h-title">Minigames</h2>
+        <p class="h-sub">Butuh jeda dari grinding? bermainlah ke arena minigame WolfCraft kapan saja.</p>
+      </div>
+      <div class="mg-grid">
+        <div class="mg-card reveal"><div class="mg-bg"></div><span class="mg-glyph">01</span><h4>OneBlock</h4><span>Satu blok, dunia tanpa batas</span></div>
+        <div class="mg-card reveal"><div class="mg-bg"></div><span class="mg-glyph">02</span><h4>PvP Arena</h4><span>Duel &amp; practice ranked</span></div>
+        <div class="mg-card reveal"><div class="mg-bg"></div><span class="mg-glyph">03</span><h4>Parkour spiral</h4><span>cetak rekor tercepat</span></div>
+        
+      </div>
+    </div>
+  </section>
+    
+
+
+  
+  <!-- RULES -->
+  <section id="rules">
+    <div class="wrap">
+      <div class="rules-wrap">
+        <div class="rules-side reveal">
+          <div class="eyebrow">Peraturan</div>
+          <p>Aturan umum berlaku di semua server WolfCraft. Setiap mode memiliki aturan tambahan yang disesuaikan dengan gaya permainannya masing-masing — terutama Lifesteal yang jauh lebih longgar.</p>
+          <div class="rules-note">Pelanggaran aturan umum dapat berujung pada peringatan, mute, atau ban permanen tergantung tingkat keparahan. Keputusan staff bersifat final.</div>
+        </div>
+        <div class="rules-list reveal">
+          <div class="acc-item open">
+            <div class="acc-head"><h4><span class="acc-num">01</span>Umum &amp; Komunitas</h4><span class="acc-plus"></span></div>
+            <div class="acc-body"><p>Dilarang keras rasisme, ujaran kebencian, hate speech, dan doxxing dalam bentuk apa pun. Hormati pemain lain dan staff di semua channel chat maupun Discord.</p></div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-head"><h4><span class="acc-num">02</span>Cheat &amp; Exploit</h4><span class="acc-plus"></span></div>
+            <div class="acc-body"><p>Penggunaan hacked client, X-ray, dupe glitch, atau exploit bug apa pun akan berujung ban permanen tanpa pengecualian di semua server.</p></div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-head"><h4><span class="acc-num">03</span>Survival Vanilla &amp; Economy</h4><span class="acc-plus"></span></div>
+            <div class="acc-body"><p>Griefing, mencuri dari klaim orang lain,dan Gunakan sistem klaim resmi untuk melindungi basis kalian.</p></div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-head"><h4><span class="acc-num">04</span>Lifesteal / Anarchy</h4><span class="acc-plus"></span></div>
+            <div class="acc-body"><p>Hampir tanpa aturan gameplay — PvP, raid, dan trap diperbolehkan penuh. Hanya aturan komunitas umum (tanpa cheat, tanpa hate speech) yang tetap berlaku.</p></div>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCORD -->
+  <section id="discord" style="padding:0;">
+    <div class="discord-band">
+      <div class="wrap discord-inner">
+        <div class="eyebrow" style="justify-content:center;">Komunitas</div>
+        <h2>Bergabung ke server di Discord</h2>
+        <p>Dapatkan info update terbaru, event komunitas, dukungan langsung dari staff, dan ngobrol bareng pemain WolfCraft lainnya.</p>
+        <a href="https://discord.gg/VfwrwPWXPZ" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.7A19.5 19.5 0 0 0 15.9 3c-.2.4-.5.9-.6 1.3a18 18 0 0 0-5.5 0A9 9 0 0 0 9.1 3a19.6 19.6 0 0 0-4.4 1.7C2 9.4 1.3 14 1.6 18.5a19.7 19.7 0 0 0 5.7 2.9c.5-.6.8-1.3 1.2-2a12.6 12.6 0 0 1-1.9-.9l.5-.4a13.9 13.9 0 0 0 11.8 0l.5.4c-.6.4-1.2.7-1.9.9.3.7.7 1.4 1.2 2a19.6 19.6 0 0 0 5.7-2.9c.4-5.2-.9-9.7-3.1-13.8ZM8.7 15.8c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1.1 0 2 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2Zm6.6 0c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1.1 0 2 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2Z"/></svg>
+          Join Discord
+        </a>
+        <div class="discord-count">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand">
+          <svg class="brand-mark wolf-icon" viewBox="0 0 48 48" fill="none" width="34" height="34">
+            <path d="M24 6 L14 13 L11 24 L16 22 L14 32 L21 27 L24 31 L27 27 L34 32 L32 22 L37 24 L34 13 Z"/>
+            <circle class="eye" cx="19.5" cy="20" r="1.6"/>
+            <circle class="eye" cx="28.5" cy="20" r="1.6"/>
+          </svg>
+          <span class="brand-text">WOLF<span>CRAFT</span></span>
+        </div>
+        <p>Jaringan Minecraft survival dengan tiga gamemode yang berbeda, komunitas aktif, dan pembaruan berkelanjutan setiap musim.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Navigasi</h5>
+        <a href="#servers">Servers</a>
+        <a href="#news">News</a>
+      </div>
+      <div class="foot-col">
+        <h5>Bantuan</h5>
+        <a href="#rules">Rules</a>
+        <a href="https://discord.gg/VfwrwPWXPZ">Support</a>
+      </div>
+      <div class="foot-col">
+        <h5>Komunitas</h5>
+        <a href="https://discord.gg/VfwrwPWXPZ">Discord</a>
+        <a href="https://www.tiktok.com/@wolfcraft.1?_r=1&_t=ZS-992Zc2xP4gm">TikTok</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 WolfCraft Network. Tidak berafiliasi dengan Mojang atau Microsoft.</p>
+      <div class="foot-social">
+        <a href="https://discord.gg/VfwrwPWXPZ" aria-label="Discord"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.7A19.5 19.5 0 0 0 15.9 3c-.2.4-.5.9-.6 1.3a18 18 0 0 0-5.5 0A9 9 0 0 0 9.1 3a19.6 19.6 0 0 0-4.4 1.7C2 9.4 1.3 14 1.6 18.5a19.7 19.7 0 0 0 5.7 2.9c.5-.6.8-1.3 1.2-2a12.6 12.6 0 0 1-1.9-.9l.5-.4a13.9 13.9 0 0 0 11.8 0l.5.4c-.6.4-1.2.7-1.9.9.3.7.7 1.4 1.2 2a19.6 19.6 0 0 0 5.7-2.9c.4-5.2-.9-9.7-3.1-13.8ZM8.7 15.8c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1.1 0 2 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2Zm6.6 0c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1.1 0 2 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2Z"/></svg></a>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">IP disalin ke clipboard</div>
+
+<script src="script.js"></script>
+</body>
+</html>
